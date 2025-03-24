@@ -18,11 +18,11 @@ body {
 }
 
 header {
-  display: contents;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 50px;
+  position: sticky;
+  top: 0;
+  width: 100%;
   background-color: #fbf8cc;
+  z-index: 1000;
 }
 
 .navbar {
@@ -30,8 +30,9 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 50px;
+  height: 50px;
   background-color: #fbf8cc;
-  height: 100px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navbar .logo {
@@ -72,6 +73,7 @@ header {
   align-items: center;
   padding: 50px;
   background-color: #fbf8cc; /* Light cream background */
+  padding-top: 20px;
 }
 
 .hero-text {
@@ -131,6 +133,14 @@ section {
   text-align: center;
 }
 
+.section-all {
+  padding-top: 70px;
+}
+
+.about.me {
+  padding-top: 80px;
+}
+
 .about-p {
   font-size: 18px;
   color: #03045e;
@@ -143,6 +153,7 @@ section {
   grid-template-columns: 1fr 1fr;
   grid-gap: 10rem;
   margin-top: 15px;
+  padding-top: 50px;
 }
 
 .about-content-title {
