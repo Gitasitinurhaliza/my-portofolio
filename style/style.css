@@ -355,3 +355,72 @@ section p {
   max-width: 600px;
   margin: auto;
 }
+
+/* Responsif untuk tablet (lebar max 1024px) */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 60px;
+  }
+
+  .hero-image {
+    position: static;
+    margin-top: 20px;
+  }
+
+  .project-row {
+    grid-template-columns: 1fr;
+  }
+
+  .work-items {
+    width: 100%;
+  }
+}
+
+/* Responsif untuk HP (lebar max 768px) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .navbar .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-text h1 {
+    font-size: 50px;
+  }
+
+  .hero-image img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .skills {
+    justify-content: center;
+  }
+
+  .project-row-content {
+    text-align: center;
+  }
+
+  .project-row-img {
+    max-width: 100%;
+  }
+
+  .contact-form {
+    max-width: 100%;
+  }
+}
